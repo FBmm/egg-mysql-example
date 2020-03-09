@@ -35,6 +35,7 @@ export default (appInfo: EggAppInfo) => {
     agent: false,
   };
 
+  // 禁用 csrf, 解决 http 请求 403 问题 （不推荐）
   config.security = {
     csrf: {
       enable: false,
